@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "KGW_Portfolio_Notes"
-  author: "Norah Jones"
+  title: "KGW Portfolio Notes"
+  author: "Kevin G. Williams"
   date: "11/10/2025"
   chapters:
     - index.qmd
