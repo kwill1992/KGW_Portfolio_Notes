@@ -5,6 +5,8 @@ book:
   title: "KGW Portfolio Notes"
   author: "Kevin G. Williams"
   date: "11/10/2025"
+  cover-image: cover.png
+  favicon: cover.png
   chapters:
     - index.qmd
     - intro.qmd
