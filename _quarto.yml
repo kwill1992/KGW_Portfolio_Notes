@@ -7,6 +7,7 @@ book:
   date: "11/10/2025"
   cover-image: cover.png
   favicon: cover.png
+  repo-url: https://github.com/kwill1992/KGW_Portfolio_Notes.git  
   chapters:
     - index.qmd
     - intro.qmd
