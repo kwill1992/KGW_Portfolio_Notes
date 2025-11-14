@@ -67,7 +67,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="./">
 <link href="./projects_hex.html" rel="next">
 <link href="./intro.html" rel="prev">
-<link href="./cover.png" rel="icon" type="image/png">
+<link href="./cover.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -228,13 +228,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#shiny-app-for-creating-hex" id="toc-shiny-app-for-creating-hex" class="nav-link" data-scroll-target="#shiny-app-for-creating-hex"><span class="header-section-number">2.1.1</span> Shiny App for creating hex</a></li>
   </ul></li>
-  <li><a href="#fix---get-all-of-these-downloaded" id="toc-fix---get-all-of-these-downloaded" class="nav-link" data-scroll-target="#fix---get-all-of-these-downloaded"><span class="header-section-number">2.2</span> FIX - get all of these downloaded</a></li>
-  <li><a href="#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" id="toc-fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" class="nav-link" data-scroll-target="#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file"><span class="header-section-number">2.3</span> FIX - fix warning for using deprecated purrr in hexwall.R file</a></li>
-  <li><a href="#load-hexwall.r-function" id="toc-load-hexwall.r-function" class="nav-link" data-scroll-target="#load-hexwall.r-function"><span class="header-section-number">2.4</span> load hexwall.R function</a></li>
-  <li><a href="#fix---getting-to-export-to-pdf" id="toc-fix---getting-to-export-to-pdf" class="nav-link" data-scroll-target="#fix---getting-to-export-to-pdf"><span class="header-section-number">2.5</span> FIX - getting to export to PDF</a></li>
-  <li><a href="#fix---getting-webshot-and-phantomjs-working" id="toc-fix---getting-webshot-and-phantomjs-working" class="nav-link" data-scroll-target="#fix---getting-webshot-and-phantomjs-working"><span class="header-section-number">2.6</span> FIX - getting webshot and phantomjs working</a></li>
-  <li><a href="#fix---data.table-is-not-working-properly-needs-to-be-fixed" id="toc-fix---data.table-is-not-working-properly-needs-to-be-fixed" class="nav-link" data-scroll-target="#fix---data.table-is-not-working-properly-needs-to-be-fixed"><span class="header-section-number">2.7</span> FIX - data.table is not working properly – needs to be fixed</a></li>
-  <li><a href="#fix---data.table-giving-a-warning-about-reading-in-last-line" id="toc-fix---data.table-giving-a-warning-about-reading-in-last-line" class="nav-link" data-scroll-target="#fix---data.table-giving-a-warning-about-reading-in-last-line"><span class="header-section-number">2.8</span> FIX - data.table giving a warning about reading in last line</a></li>
+  <li><a href="#fix---show-examples-of-rrl-hex" id="toc-fix---show-examples-of-rrl-hex" class="nav-link" data-scroll-target="#fix---show-examples-of-rrl-hex"><span class="header-section-number">2.2</span> FIX - show examples of RRL hex</a></li>
+  <li><a href="#fix---get-all-of-these-downloaded" id="toc-fix---get-all-of-these-downloaded" class="nav-link" data-scroll-target="#fix---get-all-of-these-downloaded"><span class="header-section-number">2.3</span> FIX - get all of these downloaded</a></li>
+  <li><a href="#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" id="toc-fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" class="nav-link" data-scroll-target="#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file"><span class="header-section-number">2.4</span> FIX - fix warning for using deprecated purrr in hexwall.R file</a></li>
+  <li><a href="#load-hexwall.r-function" id="toc-load-hexwall.r-function" class="nav-link" data-scroll-target="#load-hexwall.r-function"><span class="header-section-number">2.5</span> load hexwall.R function</a></li>
+  <li><a href="#fix---getting-to-export-to-pdf" id="toc-fix---getting-to-export-to-pdf" class="nav-link" data-scroll-target="#fix---getting-to-export-to-pdf"><span class="header-section-number">2.6</span> FIX - getting to export to PDF</a></li>
+  <li><a href="#fix---getting-webshot-and-phantomjs-working" id="toc-fix---getting-webshot-and-phantomjs-working" class="nav-link" data-scroll-target="#fix---getting-webshot-and-phantomjs-working"><span class="header-section-number">2.7</span> FIX - getting webshot and phantomjs working</a></li>
+  <li><a href="#fix---data.table-is-not-working-properly-needs-to-be-fixed" id="toc-fix---data.table-is-not-working-properly-needs-to-be-fixed" class="nav-link" data-scroll-target="#fix---data.table-is-not-working-properly-needs-to-be-fixed"><span class="header-section-number">2.8</span> FIX - data.table is not working properly – needs to be fixed</a></li>
+  <li><a href="#fix---data.table-giving-a-warning-about-reading-in-last-line" id="toc-fix---data.table-giving-a-warning-about-reading-in-last-line" class="nav-link" data-scroll-target="#fix---data.table-giving-a-warning-about-reading-in-last-line"><span class="header-section-number">2.9</span> FIX - data.table giving a warning about reading in last line</a></li>
   </ul>
 </nav>
     </div>
@@ -267,16 +268,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><a href="https://connect.thinkr.fr/hexmake/" class="uri">https://connect.thinkr.fr/hexmake/</a></p>
 </section>
 </section>
-<section id="fix---get-all-of-these-downloaded" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="fix---get-all-of-these-downloaded"><span class="header-section-number">2.2</span> FIX - get all of these downloaded</h2>
+<section id="fix---show-examples-of-rrl-hex" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="fix---show-examples-of-rrl-hex"><span class="header-section-number">2.2</span> FIX - show examples of RRL hex</h2>
+</section>
+<section id="fix---get-all-of-these-downloaded" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="fix---get-all-of-these-downloaded"><span class="header-section-number">2.3</span> FIX - get all of these downloaded</h2>
 <p>https://github.com/rstudio/hex-stickers</p>
 </section>
-<section id="fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file"><span class="header-section-number">2.3</span> FIX - fix warning for using deprecated purrr in hexwall.R file</h2>
+<section id="fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file"><span class="header-section-number">2.4</span> FIX - fix warning for using deprecated purrr in hexwall.R file</h2>
 <p>Warning: <code>invoke()</code> was deprecated in purrr 1.0.0. ℹ Please use <code>exec()</code> instead. This warning is displayed once every 8 hours. Call <code>lifecycle::last_lifecycle_warnings()</code> to see where this warning was generated.</p>
 </section>
-<section id="load-hexwall.r-function" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="load-hexwall.r-function"><span class="header-section-number">2.4</span> load hexwall.R function</h2>
+<section id="load-hexwall.r-function" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="load-hexwall.r-function"><span class="header-section-number">2.5</span> load hexwall.R function</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"~/Documents/r-studio-and-git/KGW_Portfolio_Notes/hexwall.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
@@ -299,29 +303,29 @@ Disabled features: fftw, ghostscript, x11</code></pre>
 </div>
 </div>
 </section>
-<section id="fix---getting-to-export-to-pdf" class="level2" data-number="2.5">
-<h2 data-number="2.5" class="anchored" data-anchor-id="fix---getting-to-export-to-pdf"><span class="header-section-number">2.5</span> FIX - getting to export to PDF</h2>
+<section id="fix---getting-to-export-to-pdf" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="fix---getting-to-export-to-pdf"><span class="header-section-number">2.6</span> FIX - getting to export to PDF</h2>
 </section>
-<section id="fix---getting-webshot-and-phantomjs-working" class="level2" data-number="2.6">
-<h2 data-number="2.6" class="anchored" data-anchor-id="fix---getting-webshot-and-phantomjs-working"><span class="header-section-number">2.6</span> FIX - getting webshot and phantomjs working</h2>
+<section id="fix---getting-webshot-and-phantomjs-working" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="fix---getting-webshot-and-phantomjs-working"><span class="header-section-number">2.7</span> FIX - getting webshot and phantomjs working</h2>
 <p>source(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/hexwall.R”) ## call hexwall function and assign to “test” ## this sometimes get an error – try adjusting sticker_row_size test &lt;- hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/my_stickers”, sticker_row_size = 7, sticker_width = 200) test</p>
 <p>png(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex”, sticker_row_size = 4, sticker_width = 200) image_write(test, “~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) dev.off()</p>
 <p>hex_table &lt;- data.table</p>
 </section>
-<section id="fix---data.table-is-not-working-properly-needs-to-be-fixed" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="fix---data.table-is-not-working-properly-needs-to-be-fixed"><span class="header-section-number">2.7</span> FIX - data.table is not working properly – needs to be fixed</h2>
+<section id="fix---data.table-is-not-working-properly-needs-to-be-fixed" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="fix---data.table-is-not-working-properly-needs-to-be-fixed"><span class="header-section-number">2.8</span> FIX - data.table is not working properly – needs to be fixed</h2>
 <p>It seems to be reading, but not displaying in data.table format correctly.<br>
 It works within R, but not in Quarto when rendered.</p>
 </section>
-<section id="fix---data.table-giving-a-warning-about-reading-in-last-line" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="fix---data.table-giving-a-warning-about-reading-in-last-line"><span class="header-section-number">2.8</span> FIX - data.table giving a warning about reading in last line</h2>
+<section id="fix---data.table-giving-a-warning-about-reading-in-last-line" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="fix---data.table-giving-a-warning-about-reading-in-last-line"><span class="header-section-number">2.9</span> FIX - data.table giving a warning about reading in last line</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#library(data.table)</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>hex_table <span class="ot">&lt;-</span> <span class="fu">datatable</span>(<span class="fu">read.csv</span>(<span class="st">"~/Documents/r-studio-and-git/my_book_again/my_stickers_data_list/hex_data.csv"</span>))</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>hex_table</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-631b4fda973d1b73e429" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-631b4fda973d1b73e429">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["Rkaggle","RRL","Leaflet"],["Package","Company","Package"],["Y","Y","N"],["Y","Y","N"],["Y","N","N"],["https://github.com/benyamindsmith/RKaggle","Selfmade","https://r-graph-gallery.com/package/leaflet.html"],["N/A","N/A","No official hex image"],["11/9/25","Unknown","11/9/25"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Name<\/th>\n      <th>Type<\/th>\n      <th>Downloaded<\/th>\n      <th>Added_To_Hexwall<\/th>\n      <th>Official.<\/th>\n      <th>Source<\/th>\n      <th>Notes<\/th>\n      <th>Last_Update<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Name","targets":1},{"name":"Type","targets":2},{"name":"Downloaded","targets":3},{"name":"Added_To_Hexwall","targets":4},{"name":"Official.","targets":5},{"name":"Source","targets":6},{"name":"Notes","targets":7},{"name":"Last_Update","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-5a6b2b6b3c0e8cd78c6f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-5a6b2b6b3c0e8cd78c6f">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["Rkaggle","RRL","Leaflet"],["Package","Company","Package"],["Y","Y","N"],["Y","Y","N"],["Y","N","N"],["https://github.com/benyamindsmith/RKaggle","Selfmade","https://r-graph-gallery.com/package/leaflet.html"],["N/A","N/A","No official hex image"],["11/9/25","Unknown","11/9/25"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Name<\/th>\n      <th>Type<\/th>\n      <th>Downloaded<\/th>\n      <th>Added_To_Hexwall<\/th>\n      <th>Official.<\/th>\n      <th>Source<\/th>\n      <th>Notes<\/th>\n      <th>Last_Update<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Name","targets":1},{"name":"Type","targets":2},{"name":"Downloaded","targets":3},{"name":"Added_To_Hexwall","targets":4},{"name":"Official.","targets":5},{"name":"Source","targets":6},{"name":"Notes","targets":7},{"name":"Last_Update","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#hex_table_as_tibble &lt;- as_tibble(hex_table)</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#hex_table_as_tibble</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>

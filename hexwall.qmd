@@ -16,6 +16,8 @@ library(tidyverse)
 library(DT)
 ```
 
+## FIX - show examples of RRL hex  
+
 ## FIX - get all of these downloaded
 
 https://github.com/rstudio/hex-stickers

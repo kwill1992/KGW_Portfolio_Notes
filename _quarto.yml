@@ -5,8 +5,8 @@ book:
   title: "KGW Portfolio Notes"
   author: "Kevin G. Williams"
   date: "11/10/2025"
-  cover-image: cover.png
-  favicon: cover.png
+  cover-image: cover.jpg
+  favicon: cover.jpg
   repo-url: https://github.com/kwill1992/KGW_Portfolio_Notes.git  
   chapters:
     - index.qmd
