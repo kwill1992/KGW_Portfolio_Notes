@@ -11,6 +11,12 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - part: "Part 1"
+      chapters:
+        - hexwall.qmd
+    - part: "Part 2"
+      chapters:
+        - projects_hex.qmd    
     - summary.qmd
     - references.qmd
 

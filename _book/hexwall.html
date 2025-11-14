@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Kevin G. Williams">
-<meta name="dcterms.date" content="2025-11-10">
 
-<title>KGW Portfolio Notes</title>
+<title>2&nbsp; Hexwall – KGW Portfolio Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,7 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./projects_hex.html" rel="next">
+<link href="./intro.html" rel="prev">
 <link href="./cover.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -106,6 +105,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
 
 
 </head>
@@ -119,7 +128,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Preface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./hexwall.html">Part 1</a></li><li class="breadcrumb-item"><a href="./hexwall.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hexwall</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -149,7 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
@@ -170,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./hexwall.html" class="sidebar-item-text sidebar-link">
+  <a href="./hexwall.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hexwall</span></span></a>
   </div>
 </li>
@@ -215,35 +224,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#hex-file-resources" id="toc-hex-file-resources" class="nav-link active" data-scroll-target="#hex-file-resources"><span class="header-section-number">2.1</span> Hex file resources</a>
+  <ul class="collapse">
+  <li><a href="#shiny-app-for-creating-hex" id="toc-shiny-app-for-creating-hex" class="nav-link" data-scroll-target="#shiny-app-for-creating-hex"><span class="header-section-number">2.1.1</span> Shiny App for creating hex</a></li>
+  </ul></li>
+  <li><a href="#fix---get-all-of-these-downloaded" id="toc-fix---get-all-of-these-downloaded" class="nav-link" data-scroll-target="#fix---get-all-of-these-downloaded"><span class="header-section-number">2.2</span> FIX - get all of these downloaded</a></li>
+  <li><a href="#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" id="toc-fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" class="nav-link" data-scroll-target="#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file"><span class="header-section-number">2.3</span> FIX - fix warning for using deprecated purrr in hexwall.R file</a></li>
+  <li><a href="#load-hexwall.r-function" id="toc-load-hexwall.r-function" class="nav-link" data-scroll-target="#load-hexwall.r-function"><span class="header-section-number">2.4</span> load hexwall.R function</a></li>
+  <li><a href="#fix---getting-to-export-to-pdf" id="toc-fix---getting-to-export-to-pdf" class="nav-link" data-scroll-target="#fix---getting-to-export-to-pdf"><span class="header-section-number">2.5</span> FIX - getting to export to PDF</a></li>
+  <li><a href="#fix---getting-webshot-and-phantomjs-working" id="toc-fix---getting-webshot-and-phantomjs-working" class="nav-link" data-scroll-target="#fix---getting-webshot-and-phantomjs-working"><span class="header-section-number">2.6</span> FIX - getting webshot and phantomjs working</a></li>
+  <li><a href="#fix---data.table-is-not-working-properly-needs-to-be-fixed" id="toc-fix---data.table-is-not-working-properly-needs-to-be-fixed" class="nav-link" data-scroll-target="#fix---data.table-is-not-working-properly-needs-to-be-fixed"><span class="header-section-number">2.7</span> FIX - data.table is not working properly – needs to be fixed</a></li>
+  <li><a href="#fix---data.table-giving-a-warning-about-reading-in-last-line" id="toc-fix---data.table-giving-a-warning-about-reading-in-last-line" class="nav-link" data-scroll-target="#fix---data.table-giving-a-warning-about-reading-in-last-line"><span class="header-section-number">2.8</span> FIX - data.table giving a warning about reading in last line</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./hexwall.html">Part 1</a></li><li class="breadcrumb-item"><a href="./hexwall.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hexwall</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">KGW Portfolio Notes</h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Hexwall</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Kevin G. Williams </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 10, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -253,16 +260,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1><p><img src="cover.png" title="KGW Portfolio Notes" class="quarto-cover-image nolightbox img-fluid"></p>
-<p>This is a Quarto book. My portfolio. If I can make it work.</p>
-<p>To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
+<section id="hex-file-resources" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="hex-file-resources"><span class="header-section-number">2.1</span> Hex file resources</h2>
+<section id="shiny-app-for-creating-hex" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="shiny-app-for-creating-hex"><span class="header-section-number">2.1.1</span> Shiny App for creating hex</h3>
+<p><a href="https://connect.thinkr.fr/hexmake/" class="uri">https://connect.thinkr.fr/hexmake/</a></p>
+</section>
+</section>
+<section id="fix---get-all-of-these-downloaded" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="fix---get-all-of-these-downloaded"><span class="header-section-number">2.2</span> FIX - get all of these downloaded</h2>
+<p>https://github.com/rstudio/hex-stickers</p>
+</section>
+<section id="fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file"><span class="header-section-number">2.3</span> FIX - fix warning for using deprecated purrr in hexwall.R file</h2>
+<p>Warning: <code>invoke()</code> was deprecated in purrr 1.0.0. ℹ Please use <code>exec()</code> instead. This warning is displayed once every 8 hours. Call <code>lifecycle::last_lifecycle_warnings()</code> to see where this warning was generated.</p>
+</section>
+<section id="load-hexwall.r-function" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="load-hexwall.r-function"><span class="header-section-number">2.4</span> load hexwall.R function</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"~/Documents/r-studio-and-git/KGW_Portfolio_Notes/hexwall.R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to ImageMagick 6.9.13.29
+Enabled features: cairo, fontconfig, freetype, heic, lcms, pango, raw, rsvg, webp
+Disabled features: fftw, ghostscript, x11</code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="fu">hexwall</span>(<span class="st">"~/Documents/r-studio-and-git/KGW_Portfolio_Notes/my_stickers"</span>, <span class="at">sticker_row_size =</span> <span class="dv">7</span>, <span class="at">sticker_width =</span> <span class="dv">200</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: `invoke()` was deprecated in purrr 1.0.0.
+ℹ Please use `exec()` instead.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>test</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="hexwall_files/figure-html/hexwall-1.png" class="img-fluid figure-img" width="700"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="fix---getting-to-export-to-pdf" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="fix---getting-to-export-to-pdf"><span class="header-section-number">2.5</span> FIX - getting to export to PDF</h2>
+</section>
+<section id="fix---getting-webshot-and-phantomjs-working" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="fix---getting-webshot-and-phantomjs-working"><span class="header-section-number">2.6</span> FIX - getting webshot and phantomjs working</h2>
+<p>source(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/hexwall.R”) ## call hexwall function and assign to “test” ## this sometimes get an error – try adjusting sticker_row_size test &lt;- hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/my_stickers”, sticker_row_size = 7, sticker_width = 200) test</p>
+<p>png(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex”, sticker_row_size = 4, sticker_width = 200) image_write(test, “~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) dev.off()</p>
+<p>hex_table &lt;- data.table</p>
+</section>
+<section id="fix---data.table-is-not-working-properly-needs-to-be-fixed" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="fix---data.table-is-not-working-properly-needs-to-be-fixed"><span class="header-section-number">2.7</span> FIX - data.table is not working properly – needs to be fixed</h2>
+<p>It seems to be reading, but not displaying in data.table format correctly.<br>
+It works within R, but not in Quarto when rendered.</p>
+</section>
+<section id="fix---data.table-giving-a-warning-about-reading-in-last-line" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="fix---data.table-giving-a-warning-about-reading-in-last-line"><span class="header-section-number">2.8</span> FIX - data.table giving a warning about reading in last line</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#library(data.table)</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>hex_table <span class="ot">&lt;-</span> <span class="fu">datatable</span>(<span class="fu">read.csv</span>(<span class="st">"~/Documents/r-studio-and-git/my_book_again/my_stickers_data_list/hex_data.csv"</span>))</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>hex_table</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-c2ff5ca5ff227ab36468" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c2ff5ca5ff227ab36468">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["Rkaggle","RRL","Leaflet"],["Package","Company","Package"],["Y","Y","N"],["Y","Y","N"],["Y","N","N"],["https://github.com/benyamindsmith/RKaggle","Selfmade","https://r-graph-gallery.com/package/leaflet.html"],["N/A","N/A","No official hex image"],["11/9/25","Unknown","11/9/25"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Name<\/th>\n      <th>Type<\/th>\n      <th>Downloaded<\/th>\n      <th>Added_To_Hexwall<\/th>\n      <th>Official.<\/th>\n      <th>Source<\/th>\n      <th>Notes<\/th>\n      <th>Last_Update<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"Name","targets":1},{"name":"Type","targets":2},{"name":"Downloaded","targets":3},{"name":"Added_To_Hexwall","targets":4},{"name":"Official.","targets":5},{"name":"Source","targets":6},{"name":"Notes","targets":7},{"name":"Last_Update","targets":8}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#hex_table_as_tibble &lt;- as_tibble(hex_table)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co">#hex_table_as_tibble</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
@@ -670,10 +732,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./projects_hex.html" class="pagination-link" aria-label="Projects - Hex">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Projects - Hex</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

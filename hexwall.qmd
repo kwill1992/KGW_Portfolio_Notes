@@ -1,0 +1,60 @@
+---
+title: "Hexwall"
+prefer-html: true
+---
+
+## Hex file resources
+
+### Shiny App for creating hex
+
+<https://connect.thinkr.fr/hexmake/>
+
+```{r setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+#library(data.table)
+library(DT)
+```
+
+## FIX - get all of these downloaded
+
+https://github.com/rstudio/hex-stickers
+
+## FIX - fix warning for using deprecated purrr in hexwall.R file
+
+Warning: `invoke()` was deprecated in purrr 1.0.0. ℹ Please use `exec()` instead. This warning is displayed once every 8 hours. Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
+
+## load hexwall.R function
+
+```{r hexwall}
+source("~/Documents/r-studio-and-git/KGW_Portfolio_Notes/hexwall.R")
+
+test <- hexwall("~/Documents/r-studio-and-git/KGW_Portfolio_Notes/my_stickers", sticker_row_size = 7, sticker_width = 200)
+test
+```
+
+## FIX - getting to export to PDF
+
+## FIX - getting webshot and phantomjs working
+
+source("\~/Documents/r-studio-and-git/my_hex_stickers/hexwall/hexwall.R") \## call hexwall function and assign to "test" \## this sometimes get an error -- try adjusting sticker_row_size test \<- hexwall("\~/Documents/r-studio-and-git/my_hex_stickers/my_stickers", sticker_row_size = 7, sticker_width = 200) test
+
+png("\~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png") hexwall("\~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex", sticker_row_size = 4, sticker_width = 200) image_write(test, "\~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png") dev.off()
+
+hex_table \<- data.table
+
+## FIX - data.table is not working properly -- needs to be fixed
+
+It seems to be reading, but not displaying in data.table format correctly.\
+It works within R, but not in Quarto when rendered.
+
+## FIX - data.table giving a warning about reading in last line
+
+```{r}
+#library(data.table)
+hex_table <- datatable(read.csv("~/Documents/r-studio-and-git/my_book_again/my_stickers_data_list/hex_data.csv"))
+hex_table
+
+#hex_table_as_tibble <- as_tibble(hex_table)
+#hex_table_as_tibble
+```

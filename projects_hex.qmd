@@ -1,0 +1,58 @@
+# Projects - Hex
+
+-   Get Hexwall working
+-   Get Hexwall working with maps
+-   Make a RRL Hex with Shiny App
+-   Make a RRL Hex with hexSticker package
+-   Get a Shiny Hexwall working
+-   Get a Shiny Hexwall working with maps
+-   Get a Shiny Hexwall working with multiple map choices
+-   Get an updated Hexwall working with an input of a hex
+
+<!-- -->
+
+-   ✅ Data loaded\
+-   ❌ Need to preprocess\
+-   ⭕ Pending\
+-   ☑️ Some progress
+-   ❎ No progress
+-   🚫 Stalled
+-   🆕 New
+-   🔄 Ongoing
+-   🏁 Completed  
+-   📅 Scheduled
+-   📌 Important
+-   🔒 Private
+-   🔓 Public
+-   🧪 Testing
+-   🛠️ Maintenance
+-   📝 Documentation
+-   💡 Ideas
+-   🎨 Design
+-   📊 Analysis
+-   📈 Visualization
+-   🤖 Automation
+-   🔍 Research
+-   🧩 Integration
+-   ⚙️ Configuration
+-   🧹 Cleanup
+-   🧭 Exploration
+-   🗂️ Organization
+-   🧮 Calculation
+-   🧱 Foundation
+-   🧬 Experimentation
+-   🧰 Toolbox
+-   🛡️ Security
+-   🌐 Networking
+-   ☁️ Cloud
+-   🖥️ Hardware
+-   📦 Packaging
+-   🧑‍💻 Development
+-   🧑‍🔬 Testing
+-   🧑‍🎨 Design
+-   🧑‍🏫 Documentation
+-   🧑‍🚀 Deployment
+-   🧑‍🔧 Maintenance
+-   🧑‍🤝‍🧑 Collaboration
+-   🧑‍💼 Management
+-   🧑‍🎤 Presentation
