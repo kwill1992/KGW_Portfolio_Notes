@@ -20,26 +20,6 @@
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "References"
-    ]
-  },
-  {
     "objectID": "hexwall.html",
     "href": "hexwall.html",
     "title": "2  Hexwall",
@@ -67,6 +47,17 @@
     "title": "2  Hexwall",
     "section": "2.2 FIX - get all of these downloaded",
     "text": "2.2 FIX - get all of these downloaded\nhttps://github.com/rstudio/hex-stickers",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+    ]
+  },
+  {
+    "objectID": "hexwall.html#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file",
+    "href": "hexwall.html#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file",
+    "title": "2  Hexwall",
+    "section": "2.3 FIX - fix warning for using deprecated purrr in hexwall.R file",
+    "text": "2.3 FIX - fix warning for using deprecated purrr in hexwall.R file\nWarning: invoke() was deprecated in purrr 1.0.0. ℹ Please use exec() instead. This warning is displayed once every 8 hours. Call lifecycle::last_lifecycle_warnings() to see where this warning was generated.",
     "crumbs": [
       "Part 1",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
@@ -139,14 +130,23 @@
     ]
   },
   {
-    "objectID": "hexwall.html#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file",
-    "href": "hexwall.html#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file",
-    "title": "2  Hexwall",
-    "section": "2.3 FIX - fix warning for using deprecated purrr in hexwall.R file",
-    "text": "2.3 FIX - fix warning for using deprecated purrr in hexwall.R file\nWarning: invoke() was deprecated in purrr 1.0.0. ℹ Please use exec() instead. This warning is displayed once every 8 hours. Call lifecycle::last_lifecycle_warnings() to see where this warning was generated.",
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "4  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
     ]
   }
 ]
