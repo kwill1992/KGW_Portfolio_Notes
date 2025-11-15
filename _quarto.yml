@@ -13,6 +13,7 @@ book:
     - intro.qmd
     - part: "Part 1"
       chapters:
+        - quarto_building_notes.qmd  
         - hexwall.qmd
     - part: "Part 2"
       chapters:

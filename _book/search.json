@@ -20,123 +20,156 @@
     ]
   },
   {
-    "objectID": "hexwall.html",
-    "href": "hexwall.html",
-    "title": "2  Hexwall",
+    "objectID": "quarto_building_notes.html",
+    "href": "quarto_building_notes.html",
+    "title": "2  Quarto Building Notes",
     "section": "",
-    "text": "2.1 Hex file resources",
+    "text": "2.1 Main Quarto Sources\nMain Quarto Guide:\nhttps://quarto.org/docs/guide/",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto Building Notes</span>"
+    ]
+  },
+  {
+    "objectID": "quarto_building_notes.html#main-quarto-sources",
+    "href": "quarto_building_notes.html#main-quarto-sources",
+    "title": "2  Quarto Building Notes",
+    "section": "",
+    "text": "Important\n\n\n\nAs you preview your book, chapters will be rendered and updated. However, if you make changes to global options (e.g. _quarto.yml or included files) you need to fully re-render your book to have all of the changes reflected. Consequently, you should always fully quarto render your site before deploying it, even if you have already previewed changes to some pages with the preview server.\n\n\n\n2.1.1 Publishing\nWhen you are ready to publish the book, use the render command to render all output formats:\n\n\nTerminal\n\nquarto render\n\nIf you pass no arguments to quarto render, all formats will be rendered. You can also render individual formats via the --to argument:\n\n\nTerminal\n\nquarto render           # render all formats\nquarto render --to pdf  # render PDF format only\n\nThe output of your book will be written to the _book sub-directory of your book project:\n\n\nTerminal\n\nmybook/\n  _book/\n    index.html # and other book files\n    mybook.pdf\n    mybook.epub\n\nSee the documentation on Publishing Websites for details on how to publish books to GitHub Pages, Netlify, and other services. Note that in that documentation the output-dir may be referred to as _site: for publishing books you should use _book rather than _site.",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto Building Notes</span>"
+    ]
+  },
+  {
+    "objectID": "hexwall.html",
+    "href": "hexwall.html",
+    "title": "3  Hexwall",
+    "section": "",
+    "text": "3.1 Hex file resources",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#hex-file-resources",
     "href": "hexwall.html#hex-file-resources",
-    "title": "2  Hexwall",
+    "title": "3  Hexwall",
     "section": "",
-    "text": "2.1.1 Shiny App for creating hex\nhttps://connect.thinkr.fr/hexmake/",
+    "text": "3.1.1 Shiny App for creating hex\nhttps://connect.thinkr.fr/hexmake/",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
+    ]
+  },
+  {
+    "objectID": "hexwall.html#fix---show-examples-of-rrl-hex",
+    "href": "hexwall.html#fix---show-examples-of-rrl-hex",
+    "title": "3  Hexwall",
+    "section": "3.2 FIX - show examples of RRL hex",
+    "text": "3.2 FIX - show examples of RRL hex",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#fix---get-all-of-these-downloaded",
     "href": "hexwall.html#fix---get-all-of-these-downloaded",
-    "title": "2  Hexwall",
-    "section": "2.3 FIX - get all of these downloaded",
-    "text": "2.3 FIX - get all of these downloaded\nhttps://github.com/rstudio/hex-stickers",
+    "title": "3  Hexwall",
+    "section": "3.3 FIX - get all of these downloaded",
+    "text": "3.3 FIX - get all of these downloaded\nhttps://github.com/rstudio/hex-stickers",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file",
     "href": "hexwall.html#fix---fix-warning-for-using-deprecated-purrr-in-hexwall.r-file",
-    "title": "2  Hexwall",
-    "section": "2.4 FIX - fix warning for using deprecated purrr in hexwall.R file",
-    "text": "2.4 FIX - fix warning for using deprecated purrr in hexwall.R file\nWarning: invoke() was deprecated in purrr 1.0.0. ℹ Please use exec() instead. This warning is displayed once every 8 hours. Call lifecycle::last_lifecycle_warnings() to see where this warning was generated.",
+    "title": "3  Hexwall",
+    "section": "3.4 FIX - fix warning for using deprecated purrr in hexwall.R file",
+    "text": "3.4 FIX - fix warning for using deprecated purrr in hexwall.R file\nWarning: invoke() was deprecated in purrr 1.0.0. ℹ Please use exec() instead. This warning is displayed once every 8 hours. Call lifecycle::last_lifecycle_warnings() to see where this warning was generated.",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#load-hexwall.r-function",
     "href": "hexwall.html#load-hexwall.r-function",
-    "title": "2  Hexwall",
-    "section": "2.5 load hexwall.R function",
-    "text": "2.5 load hexwall.R function\n\nsource(\"~/Documents/r-studio-and-git/KGW_Portfolio_Notes/hexwall.R\")\n\nLinking to ImageMagick 6.9.13.29\nEnabled features: cairo, fontconfig, freetype, heic, lcms, pango, raw, rsvg, webp\nDisabled features: fftw, ghostscript, x11\n\ntest &lt;- hexwall(\"~/Documents/r-studio-and-git/KGW_Portfolio_Notes/my_stickers\", sticker_row_size = 7, sticker_width = 200)\n\nWarning: `invoke()` was deprecated in purrr 1.0.0.\nℹ Please use `exec()` instead.\n\ntest",
+    "title": "3  Hexwall",
+    "section": "3.5 load hexwall.R function",
+    "text": "3.5 load hexwall.R function\n\nsource(\"~/Documents/r-studio-and-git/KGW_Portfolio_Notes/hexwall.R\")\n\nLinking to ImageMagick 6.9.13.29\nEnabled features: cairo, fontconfig, freetype, heic, lcms, pango, raw, rsvg, webp\nDisabled features: fftw, ghostscript, x11\n\ntest &lt;- hexwall(\"~/Documents/r-studio-and-git/KGW_Portfolio_Notes/my_stickers\", sticker_row_size = 7, sticker_width = 200)\n\nWarning: `invoke()` was deprecated in purrr 1.0.0.\nℹ Please use `exec()` instead.\n\ntest",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#fix---getting-to-export-to-pdf",
     "href": "hexwall.html#fix---getting-to-export-to-pdf",
-    "title": "2  Hexwall",
-    "section": "2.6 FIX - getting to export to PDF",
-    "text": "2.6 FIX - getting to export to PDF",
+    "title": "3  Hexwall",
+    "section": "3.6 FIX - getting to export to PDF",
+    "text": "3.6 FIX - getting to export to PDF",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#fix---getting-webshot-and-phantomjs-working",
     "href": "hexwall.html#fix---getting-webshot-and-phantomjs-working",
-    "title": "2  Hexwall",
-    "section": "2.7 FIX - getting webshot and phantomjs working",
-    "text": "2.7 FIX - getting webshot and phantomjs working\nsource(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/hexwall.R”) ## call hexwall function and assign to “test” ## this sometimes get an error – try adjusting sticker_row_size test &lt;- hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/my_stickers”, sticker_row_size = 7, sticker_width = 200) test\npng(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex”, sticker_row_size = 4, sticker_width = 200) image_write(test, “~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) dev.off()\nhex_table &lt;- data.table",
+    "title": "3  Hexwall",
+    "section": "3.7 FIX - getting webshot and phantomjs working",
+    "text": "3.7 FIX - getting webshot and phantomjs working\nsource(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/hexwall.R”) ## call hexwall function and assign to “test” ## this sometimes get an error – try adjusting sticker_row_size test &lt;- hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/my_stickers”, sticker_row_size = 7, sticker_width = 200) test\npng(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) hexwall(“~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex”, sticker_row_size = 4, sticker_width = 200) image_write(test, “~/Documents/r-studio-and-git/my_hex_stickers/hexwall/samplehex/test123.png”) dev.off()\nhex_table &lt;- data.table",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#fix---data.table-is-not-working-properly-needs-to-be-fixed",
     "href": "hexwall.html#fix---data.table-is-not-working-properly-needs-to-be-fixed",
-    "title": "2  Hexwall",
-    "section": "2.8 FIX - data.table is not working properly – needs to be fixed",
-    "text": "2.8 FIX - data.table is not working properly – needs to be fixed\nIt seems to be reading, but not displaying in data.table format correctly.\nIt works within R, but not in Quarto when rendered.",
+    "title": "3  Hexwall",
+    "section": "3.8 FIX - data.table is not working properly – needs to be fixed",
+    "text": "3.8 FIX - data.table is not working properly – needs to be fixed\nIt seems to be reading, but not displaying in data.table format correctly.\nIt works within R, but not in Quarto when rendered.",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "hexwall.html#fix---data.table-giving-a-warning-about-reading-in-last-line",
     "href": "hexwall.html#fix---data.table-giving-a-warning-about-reading-in-last-line",
-    "title": "2  Hexwall",
-    "section": "2.9 FIX - data.table giving a warning about reading in last line",
-    "text": "2.9 FIX - data.table giving a warning about reading in last line\n\n#library(data.table)\nhex_table &lt;- datatable(read.csv(\"~/Documents/r-studio-and-git/my_book_again/my_stickers_data_list/hex_data.csv\"))\nhex_table\n\n\n\n\n#hex_table_as_tibble &lt;- as_tibble(hex_table)\n#hex_table_as_tibble",
+    "title": "3  Hexwall",
+    "section": "3.9 FIX - data.table giving a warning about reading in last line",
+    "text": "3.9 FIX - data.table giving a warning about reading in last line\n\n#library(data.table)\nhex_table &lt;- datatable(read.csv(\"~/Documents/r-studio-and-git/my_book_again/my_stickers_data_list/hex_data.csv\"))\nhex_table\n\n\n\n\n#hex_table_as_tibble &lt;- as_tibble(hex_table)\n#hex_table_as_tibble",
     "crumbs": [
       "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   },
   {
     "objectID": "projects_hex.html",
     "href": "projects_hex.html",
-    "title": "3  Projects - Hex",
+    "title": "4  Projects - Hex",
     "section": "",
     "text": "Get Hexwall working\nGet Hexwall working with maps\nMake a RRL Hex with Shiny App\nMake a RRL Hex with hexSticker package\nGet a Shiny Hexwall working\nGet a Shiny Hexwall working with maps\nGet a Shiny Hexwall working with multiple map choices\nGet an updated Hexwall working with an input of a hex\n\n\n\n✅ Data loaded\n\n❌ Need to preprocess\n\n⭕ Pending\n\n☑️ Some progress\n❎ No progress\n🚫 Stalled\n🆕 New\n🔄 Ongoing\n🏁 Completed\n\n📅 Scheduled\n📌 Important\n🔒 Private\n🔓 Public\n🧪 Testing\n🛠️ Maintenance\n📝 Documentation\n💡 Ideas\n🎨 Design\n📊 Analysis\n📈 Visualization\n🤖 Automation\n🔍 Research\n🧩 Integration\n⚙️ Configuration\n🧹 Cleanup\n🧭 Exploration\n🗂️ Organization\n🧮 Calculation\n🧱 Foundation\n🧬 Experimentation\n🧰 Toolbox\n🛡️ Security\n🌐 Networking\n☁️ Cloud\n🖥️ Hardware\n📦 Packaging\n🧑‍💻 Development\n🧑‍🔬 Testing\n🧑‍🎨 Design\n🧑‍🏫 Documentation\n🧑‍🚀 Deployment\n🧑‍🔧 Maintenance\n🧑‍🤝‍🧑 Collaboration\n🧑‍💼 Management\n🧑‍🎤 Presentation",
     "crumbs": [
       "Part 2",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Projects - Hex</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Projects - Hex</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "4  Summary",
+    "title": "5  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -147,17 +180,6 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
-    ]
-  },
-  {
-    "objectID": "hexwall.html#fix---show-examples-of-rrl-hex",
-    "href": "hexwall.html#fix---show-examples-of-rrl-hex",
-    "title": "2  Hexwall",
-    "section": "2.2 FIX - show examples of RRL hex",
-    "text": "2.2 FIX - show examples of RRL hex",
-    "crumbs": [
-      "Part 1",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Hexwall</span>"
     ]
   }
 ]

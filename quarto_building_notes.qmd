@@ -1,0 +1,40 @@
+---
+title: "Quarto Building Notes"
+---
+
+## Main Quarto Sources  
+
+Main Quarto Guide:
+
+<https://quarto.org/docs/guide/>
+
+::: callout-important
+As you preview your book, chapters will be rendered and updated. However, if you make changes to global options (e.g. `_quarto.yml` or included files) you need to fully re-render your book to have all of the changes reflected. Consequently, you should always fully `quarto render` your site before deploying it, even if you have already previewed changes to some pages with the preview server.
+:::
+
+### Publishing
+
+When you are ready to publish the book, use the `render` command to render all output formats:
+
+``` {.bash filename="Terminal"}
+quarto render
+```
+
+If you pass no arguments to `quarto render`, all formats will be rendered. You can also render individual formats via the `--to` argument:
+
+``` {.bash filename="Terminal"}
+quarto render           # render all formats
+quarto render --to pdf  # render PDF format only
+```
+
+The output of your book will be written to the `_book` sub-directory of your book project:
+
+``` {.bash filename="Terminal"}
+mybook/
+  _book/
+    index.html # and other book files
+    mybook.pdf
+    mybook.epub
+```
+
+See the documentation on [Publishing Websites](https://quarto.org/docs/publishing/) for details on how to publish books to GitHub Pages, Netlify, and other services. Note that in that documentation the `output-dir` may be referred to as `_site`: for publishing books you should use `_book` rather than `_site`.
