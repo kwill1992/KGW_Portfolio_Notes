@@ -224,6 +224,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#publishing" id="toc-publishing" class="nav-link" data-scroll-target="#publishing"><span class="header-section-number">2.1.1</span> Publishing</a></li>
   </ul></li>
+  <li><a href="#to-publish-to-quarto-pub" id="toc-to-publish-to-quarto-pub" class="nav-link" data-scroll-target="#to-publish-to-quarto-pub"><span class="header-section-number">2.2</span> To Publish to Quarto Pub</a></li>
+  <li><a href="#publish-command" id="toc-publish-command" class="nav-link" data-scroll-target="#publish-command"><span class="header-section-number">2.3</span> Publish Command</a></li>
+  <li><a href="#toc-table-of-contents-info" id="toc-toc-table-of-contents-info" class="nav-link" data-scroll-target="#toc-table-of-contents-info"><span class="header-section-number">2.4</span> toc table of contents info</a></li>
   </ul>
 </nav>
     </div>
@@ -295,9 +298,42 @@ Important
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="ex">mybook.epub</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>See the documentation on <a href="https://quarto.org/docs/publishing/">Publishing Websites</a> for details on how to publish books to GitHub Pages, Netlify, and other services. Note that in that documentation the <code>output-dir</code> may be referred to as <code>_site</code>: for publishing books you should use <code>_book</code> rather than <code>_site</code>.</p>
-
-
 </section>
+</section>
+<section id="to-publish-to-quarto-pub" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="to-publish-to-quarto-pub"><span class="header-section-number">2.2</span> To Publish to Quarto Pub</h2>
+</section>
+<section id="publish-command" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="publish-command"><span class="header-section-number">2.3</span> Publish Command</h2>
+<p>The <code>quarto publish</code> command is the easiest way to publish locally rendered content. From the directory where your project is located, execute the <code>quarto publish</code> command for Quarto Pub:</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Terminal</strong></pre>
+</div>
+<div class="sourceCode" id="cb4" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> publish quarto-pub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>If you haven’t published to Quarto Pub before, the publish command will prompt you to authenticate. After confirming that you want to publish, your content will be rendered and deployed, and then a browser opened to view your site.</p>
+</section>
+<section id="toc-table-of-contents-info" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="toc-table-of-contents-info"><span class="header-section-number">2.4</span> toc table of contents info</h2>
+<p><a href="https://quarto.org/docs/output-formats/html-basics.html" class="uri">https://quarto.org/docs/output-formats/html-basics.html</a><br>
+You can customize the table of contents (TOC) for HTML output formats using the <code>toc</code> option in your document or project YAML. Here are some common configurations:</p>
+<ul>
+<li><code>toc: true</code> - Enables the TOC with default settings.</li>
+<li><code>toc: false</code> - Disables the TOC.</li>
+<li><code>toc: {depth: 2}</code> - Sets the depth of the TOC to 2 levels.</li>
+<li><code>toc: {numbered: true}</code> - Enables numbered entries in the TOC.</li>
+<li><code>toc: {float: true}</code> - Makes the TOC float alongside the content.</li>
+<li><code>toc: {position: left}</code> - Positions the TOC on the left side of the page.</li>
+<li><code>toc: {collapse: true}</code> - Allows sections in the TOC to be collapsible. You can combine these options as needed. For example, to create a floating, numbered TOC with a depth of 3 levels, you would use:<br>
+</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">depth</span><span class="kw">:</span><span class="at"> </span><span class="dv">3</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">numbered</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">float</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
 </section>
 
 </main> <!-- /main -->

@@ -181,5 +181,38 @@
     "crumbs": [
       "References"
     ]
+  },
+  {
+    "objectID": "quarto_building_notes.html#to-publish-to-quarto-pub",
+    "href": "quarto_building_notes.html#to-publish-to-quarto-pub",
+    "title": "2  Quarto Building Notes",
+    "section": "2.2 To Publish to Quarto Pub",
+    "text": "2.2 To Publish to Quarto Pub",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto Building Notes</span>"
+    ]
+  },
+  {
+    "objectID": "quarto_building_notes.html#publish-command",
+    "href": "quarto_building_notes.html#publish-command",
+    "title": "2  Quarto Building Notes",
+    "section": "2.3 Publish Command",
+    "text": "2.3 Publish Command\nThe quarto publish command is the easiest way to publish locally rendered content. From the directory where your project is located, execute the quarto publish command for Quarto Pub:\n\n\nTerminal\n\nquarto publish quarto-pub\n\nIf you haven’t published to Quarto Pub before, the publish command will prompt you to authenticate. After confirming that you want to publish, your content will be rendered and deployed, and then a browser opened to view your site.",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto Building Notes</span>"
+    ]
+  },
+  {
+    "objectID": "quarto_building_notes.html#toc-table-of-contents-info",
+    "href": "quarto_building_notes.html#toc-table-of-contents-info",
+    "title": "2  Quarto Building Notes",
+    "section": "2.4 toc table of contents info",
+    "text": "2.4 toc table of contents info\nhttps://quarto.org/docs/output-formats/html-basics.html\nYou can customize the table of contents (TOC) for HTML output formats using the toc option in your document or project YAML. Here are some common configurations:\n\ntoc: true - Enables the TOC with default settings.\ntoc: false - Disables the TOC.\ntoc: {depth: 2} - Sets the depth of the TOC to 2 levels.\ntoc: {numbered: true} - Enables numbered entries in the TOC.\ntoc: {float: true} - Makes the TOC float alongside the content.\ntoc: {position: left} - Positions the TOC on the left side of the page.\ntoc: {collapse: true} - Allows sections in the TOC to be collapsible. You can combine these options as needed. For example, to create a floating, numbered TOC with a depth of 3 levels, you would use:\n\n\ntoc:\n  depth: 3\n  numbered: true\n  float: true",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto Building Notes</span>"
+    ]
   }
 ]

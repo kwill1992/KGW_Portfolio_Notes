@@ -38,3 +38,40 @@ mybook/
 ```
 
 See the documentation on [Publishing Websites](https://quarto.org/docs/publishing/) for details on how to publish books to GitHub Pages, Netlify, and other services. Note that in that documentation the `output-dir` may be referred to as `_site`: for publishing books you should use `_book` rather than `_site`.
+
+
+## To Publish to Quarto Pub  
+
+## Publish Command
+
+The `quarto publish` command is the easiest way to publish locally rendered content. From the directory where your project is located, execute the `quarto publish` command for Quarto Pub:
+
+```{.bash filename="Terminal"}
+quarto publish quarto-pub
+```
+
+If you haven't published to Quarto Pub before, the publish command will prompt you to authenticate. After confirming that you want to publish, your content will be rendered and deployed, and then a browser opened to view your site.
+
+
+## toc table of contents info  
+
+<https://quarto.org/docs/output-formats/html-basics.html>  
+You can customize the table of contents (TOC) for HTML output formats using the `toc` option in your document or project YAML. Here are some common configurations:
+
+
+- `toc: true` - Enables the TOC with default settings.
+- `toc: false` - Disables the TOC.
+- `toc: {depth: 2}` - Sets the depth of the TOC to 2 levels.
+- `toc: {numbered: true}` - Enables numbered entries in the TOC.
+- `toc: {float: true}` - Makes the TOC float alongside the content.
+- `toc: {position: left}` - Positions the TOC on the left side of the page.
+- `toc: {collapse: true}` - Allows sections in the TOC to be collapsible. 
+You can combine these options as needed. For example, to create a floating, numbered TOC with a depth of 3 levels, you would use:    
+```yaml
+toc:
+  depth: 3
+  numbered: true
+  float: true
+```
+
+
