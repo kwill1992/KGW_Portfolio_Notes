@@ -227,6 +227,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#to-publish-to-quarto-pub" id="toc-to-publish-to-quarto-pub" class="nav-link" data-scroll-target="#to-publish-to-quarto-pub"><span class="header-section-number">2.2</span> To Publish to Quarto Pub</a></li>
   <li><a href="#publish-command" id="toc-publish-command" class="nav-link" data-scroll-target="#publish-command"><span class="header-section-number">2.3</span> Publish Command</a></li>
   <li><a href="#toc-table-of-contents-info" id="toc-toc-table-of-contents-info" class="nav-link" data-scroll-target="#toc-table-of-contents-info"><span class="header-section-number">2.4</span> toc table of contents info</a></li>
+  <li><a href="#tags" id="toc-tags" class="nav-link" data-scroll-target="#tags"><span class="header-section-number">2.5</span> Tags</a>
+  <ul class="collapse">
+  <li><a href="#invisible-tags-when-rendered" id="toc-invisible-tags-when-rendered" class="nav-link" data-scroll-target="#invisible-tags-when-rendered"><span class="header-section-number">2.5.1</span> Invisible tags when rendered</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -332,8 +336,55 @@ You can customize the table of contents (TOC) for HTML output formats using the 
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">depth</span><span class="kw">:</span><span class="at"> </span><span class="dv">3</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">numbered</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">float</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="tags" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="tags"><span class="header-section-number">2.5</span> Tags</h2>
+<div class="tags">
+<p>#tag:projects #tag:data #todo</p>
+</div>
+<p>You can add tags to your Quarto documents using the <code>tags</code> field in the YAML front matter. Tags help categorize and organize your content, making it easier to find related documents. Here’s how you can add tags:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tags</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">data</span><span class="kw">,</span><span class="at"> analysis</span><span class="kw">,</span><span class="at"> R</span><span class="kw">]</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="pp">---  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this example, the document is tagged with “data”, “analysis”, and “R”.<br>
+You can also add tags in a more structured way using a list:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tags</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> data</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> analysis</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> R</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---  </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Tags can be used for filtering and searching within your Quarto projects, especially when you have multiple documents. They can also be useful for generating tag clouds or lists of related content if you are building a website or blog with Quarto.<br>
+## More Quarto Resources<br>
+- Quarto Official Documentation: <a href="https://quarto.org/docs/" class="uri">https://quarto.org/docs/</a><br>
+- Quarto GitHub Repository: &lt;</p>
+<section id="invisible-tags-when-rendered" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="invisible-tags-when-rendered"><span class="header-section-number">2.5.1</span> Invisible tags when rendered</h3>
+<p>You can add invisible tags to your Quarto documents by using HTML comments in the YAML front matter. This way, the tags will not be displayed in the rendered output but will still be present in the source code for organizational purposes. Here’s how you can do it:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="at">&lt;!--</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tags</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">data</span><span class="kw">,</span><span class="at"> analysis</span><span class="kw">,</span><span class="at"> R</span><span class="kw">]</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="at">--&gt;</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>In this example, the tags “data”, “analysis”, and “R” are included in an HTML comment, making them invisible in the rendered document.<br>
+You can also use a list format within the HTML comment:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="at">&lt;!--</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">tags</span><span class="kw">:</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> data</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> analysis</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> R</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="at">--&gt;</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This method allows you to keep your tags organized without displaying them in the final output.</p>
+<!-- tags: projects, git, rstudio, ideas -->
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

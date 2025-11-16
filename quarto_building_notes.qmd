@@ -74,4 +74,60 @@ toc:
   float: true
 ```
 
+## Tags  
+
+::: tags
+#tag:projects #tag:data #todo
+:::
+You can add tags to your Quarto documents using the `tags` field in the YAML front matter. Tags help categorize and organize your content, making it easier to find related documents. Here's how you can add tags:  
+```yaml
+---
+title: "My Document"
+tags: [data, analysis, R]
+---  
+```
+In this example, the document is tagged with "data", "analysis", and "R".  
+You can also add tags in a more structured way using a list:  
+```yaml
+---
+title: "My Document"
+tags:
+  - data
+  - analysis
+  - R
+---  
+```
+Tags can be used for filtering and searching within your Quarto projects, especially when you have multiple documents. They can also be useful for generating tag clouds or lists of related content if you are building a website or blog with Quarto.  
+## More Quarto Resources    
+-   Quarto Official Documentation: <https://quarto.org/docs/>  
+-   Quarto GitHub Repository: < 
+  
+  
+### Invisible tags when rendered  
+You can add invisible tags to your Quarto documents by using HTML comments in the YAML front matter. This way, the tags will not be displayed in the rendered output but will still be present in the source code for organizational purposes. Here's how you can do it:  
+```yaml
+---
+title: "My Document"
+<!--
+tags: [data, analysis, R]
+-->
+---
+```
+In this example, the tags "data", "analysis", and "R" are included in an HTML comment, making them invisible in the rendered document.  
+You can also use a list format within the HTML comment:  
+```yaml
+---
+title: "My Document"
+<!--
+tags:
+  - data
+  - analysis
+  - R
+-->
+---
+```
+This method allows you to keep your tags organized without displaying them in the final output.  
+
+<!-- tags: projects, git, rstudio, ideas -->
+
 

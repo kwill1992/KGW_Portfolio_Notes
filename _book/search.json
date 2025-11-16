@@ -214,5 +214,16 @@
       "Part 1",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto Building Notes</span>"
     ]
+  },
+  {
+    "objectID": "quarto_building_notes.html#tags",
+    "href": "quarto_building_notes.html#tags",
+    "title": "2  Quarto Building Notes",
+    "section": "2.5 Tags",
+    "text": "2.5 Tags\n\n#tag:projects #tag:data #todo\n\nYou can add tags to your Quarto documents using the tags field in the YAML front matter. Tags help categorize and organize your content, making it easier to find related documents. Here’s how you can add tags:\n---\ntitle: \"My Document\"\ntags: [data, analysis, R]\n---  \nIn this example, the document is tagged with “data”, “analysis”, and “R”.\nYou can also add tags in a more structured way using a list:\n---\ntitle: \"My Document\"\ntags:\n  - data\n  - analysis\n  - R\n---  \nTags can be used for filtering and searching within your Quarto projects, especially when you have multiple documents. They can also be useful for generating tag clouds or lists of related content if you are building a website or blog with Quarto.\n## More Quarto Resources\n- Quarto Official Documentation: https://quarto.org/docs/\n- Quarto GitHub Repository: &lt;\n\n2.5.1 Invisible tags when rendered\nYou can add invisible tags to your Quarto documents by using HTML comments in the YAML front matter. This way, the tags will not be displayed in the rendered output but will still be present in the source code for organizational purposes. Here’s how you can do it:\n---\ntitle: \"My Document\"\n&lt;!--\ntags: [data, analysis, R]\n--&gt;\n---\nIn this example, the tags “data”, “analysis”, and “R” are included in an HTML comment, making them invisible in the rendered document.\nYou can also use a list format within the HTML comment:\n---\ntitle: \"My Document\"\n&lt;!--\ntags:\n  - data\n  - analysis\n  - R\n--&gt;\n---\nThis method allows you to keep your tags organized without displaying them in the final output.",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quarto Building Notes</span>"
+    ]
   }
 ]
