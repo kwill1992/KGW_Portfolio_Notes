@@ -16,6 +16,7 @@ book:
         - quarto_building_notes.qmd  
         - hexwall.qmd
         - projects_openai.qmd
+        - projects_creating_projects.qmd
     - part: "Part 2"
       chapters:
         - projects_hex.qmd    
