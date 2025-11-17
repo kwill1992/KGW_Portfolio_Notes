@@ -15,11 +15,11 @@ book:
       chapters:
         - quarto_building_notes.qmd  
         - hexwall.qmd
+        - projects_openai.qmd
     - part: "Part 2"
       chapters:
         - projects_hex.qmd    
         - concepts.qmd
-        - rrl_dot_com.qmd
     - summary.qmd
     - errors_and_warnings.qmd
     - references.qmd
