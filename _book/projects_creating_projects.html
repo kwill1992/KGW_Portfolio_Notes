@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -215,8 +250,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#fix---migrate-from-previous" id="toc-fix---migrate-from-previous" class="nav-link active" data-scroll-target="#fix---migrate-from-previous"><span class="header-section-number">5.1</span> FIX - migrate from previous</a></li>
-  <li><a href="#need-to-figure-out-that-possible-bad-data-on-older-quarto-book" id="toc-need-to-figure-out-that-possible-bad-data-on-older-quarto-book" class="nav-link" data-scroll-target="#need-to-figure-out-that-possible-bad-data-on-older-quarto-book"><span class="header-section-number">5.2</span> Need to figure out that possible bad data on older quarto book</a></li>
+  <li><a href="#creating-a-new-quarto-document-with-connection-to-github-repository" id="toc-creating-a-new-quarto-document-with-connection-to-github-repository" class="nav-link active" data-scroll-target="#creating-a-new-quarto-document-with-connection-to-github-repository"><span class="header-section-number">5.0.1</span> Creating a new quarto document with connection to github repository</a></li>
+  <li><a href="#creating-a-new-project" id="toc-creating-a-new-project" class="nav-link" data-scroll-target="#creating-a-new-project"><span class="header-section-number">5.0.2</span> Creating a New Project</a></li>
+  <li><a href="#setting-up-version-control-with-git" id="toc-setting-up-version-control-with-git" class="nav-link" data-scroll-target="#setting-up-version-control-with-git"><span class="header-section-number">5.0.3</span> Setting Up Version Control with Git</a></li>
+  <li><a href="#add-starting-files" id="toc-add-starting-files" class="nav-link" data-scroll-target="#add-starting-files"><span class="header-section-number">5.0.4</span> add starting files</a></li>
+  <li><a href="#add-data-folder" id="toc-add-data-folder" class="nav-link" data-scroll-target="#add-data-folder"><span class="header-section-number">5.0.5</span> add data folder</a></li>
+  <li><a href="#fixing-and-updating-readme.md-file-with-github-info" id="toc-fixing-and-updating-readme.md-file-with-github-info" class="nav-link" data-scroll-target="#fixing-and-updating-readme.md-file-with-github-info"><span class="header-section-number">5.0.6</span> fixing and updating README.md file with github info</a></li>
   </ul>
 </nav>
     </div>
@@ -242,11 +281,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="fix---migrate-from-previous" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="fix---migrate-from-previous"><span class="header-section-number">5.1</span> FIX - migrate from previous</h2>
+<section id="creating-a-new-quarto-document-with-connection-to-github-repository" class="level3" data-number="5.0.1">
+<h3 data-number="5.0.1" class="anchored" data-anchor-id="creating-a-new-quarto-document-with-connection-to-github-repository"><span class="header-section-number">5.0.1</span> Creating a new quarto document with connection to github repository</h3>
+<ol type="1">
+<li>click on new project</li>
+<li>new directory</li>
+<li>Choose project type: Example: Quarto Book</li>
+<li>) Directory name: YOUR-PROJECT-NAME</li>
+<li>Create a git repository: check box</li>
+<li>Create project</li>
+</ol>
+<p>Notes here: <a href="https://happygitwithr.com/existing-github-last" class="uri">https://happygitwithr.com/existing-github-last</a></p>
+<p>Now, to connect to your GITHUB repository, follow these steps:<br>
+In console:<br>
+usethis::use_git() # to make initial comment<br>
+Then: usethis::use_github() This will create a new repository on GitHub and link it to your local Git repository. It will also push your initial commit to the remote repository on GitHub.</p>
+<p>README.md will need to be created. You can created one from github respository page. “Add Page” button.<br>
+Then pull it down to your local repository.</p>
 </section>
-<section id="need-to-figure-out-that-possible-bad-data-on-older-quarto-book" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="need-to-figure-out-that-possible-bad-data-on-older-quarto-book"><span class="header-section-number">5.2</span> Need to figure out that possible bad data on older quarto book</h2>
+<section id="creating-a-new-project" class="level3" data-number="5.0.2">
+<h3 data-number="5.0.2" class="anchored" data-anchor-id="creating-a-new-project"><span class="header-section-number">5.0.2</span> Creating a New Project</h3>
+<p>To create a new project, follow these steps: Make this your working directory: ~/Documents/r-studio-and-git</p>
+<p>In console: library(usethis)</p>
+<p>usethis::create_project(“~/Documents/r-studio-and-git/YOUR-PROJECT-NAME”) This will create a new directory for your project and open it in RStudio. It will also create a default R project file (.Rproj) for you. It will also create a readme file for you. It will also create a .gitignore file for you.</p>
+</section>
+<section id="setting-up-version-control-with-git" class="level3" data-number="5.0.3">
+<h3 data-number="5.0.3" class="anchored" data-anchor-id="setting-up-version-control-with-git"><span class="header-section-number">5.0.3</span> Setting Up Version Control with Git</h3>
+<p>To set up version control with Git for your new project, follow these steps: In console: usethis::use_git() This will initialize a Git repository in your project directory. It will also create a .git directory to track changes. It will also make an initial commit with the existing files in your project. ### Connecting to GitHub To connect your local Git repository to a remote repository on GitHub, follow these steps: First, create a new repository on GitHub without a README, .gitignore, or license. Then, in console: usethis::use_github() This will create a new repository on GitHub and link it to your local Git repository. It will also push your initial commit to the remote repository on GitHub. ### Summary You have now created a new R project, set up version control with Git, and connected it to a remote repository on GitHub. You can now start working on your project and use Git to track changes and collaborate with others.</p>
+</section>
+<section id="add-starting-files" class="level3" data-number="5.0.4">
+<h3 data-number="5.0.4" class="anchored" data-anchor-id="add-starting-files"><span class="header-section-number">5.0.4</span> add starting files</h3>
+<p>usethis::use_r(“import”) # for R scripts under “R” folder usethis::use_r(“tidy”) # for R scripts under “R” folder</p>
+</section>
+<section id="add-data-folder" class="level3" data-number="5.0.5">
+<h3 data-number="5.0.5" class="anchored" data-anchor-id="add-data-folder"><span class="header-section-number">5.0.5</span> add data folder</h3>
+<p>usethis::use_data_raw() # for raw data under “data-raw” usethis::use_directory(“DATA”) # for processed data under “data”</p>
+</section>
+<section id="fixing-and-updating-readme.md-file-with-github-info" class="level3" data-number="5.0.6">
+<h3 data-number="5.0.6" class="anchored" data-anchor-id="fixing-and-updating-readme.md-file-with-github-info"><span class="header-section-number">5.0.6</span> fixing and updating README.md file with github info</h3>
+<p>When README.md file was first created, it does not render properly on GitHub.<br>
+To fix this, follow these steps:<br>
+1. Open README.md file in RStudio.<br>
+2. Add the following YAML header at the top of the file:<br>
+</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> github_document</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Save the file.</li>
+<li>In console, run the following command to render the README.md file: rmarkdown::render(“README.md”)</li>
+<li>Commit and push the changes to GitHub. This will update the README.md file to render properly on GitHub with the specified title, author, and date.<br>
+You will need to render the README.md file each time you make changes to it.</li>
+</ol>
 
 
 </section>
