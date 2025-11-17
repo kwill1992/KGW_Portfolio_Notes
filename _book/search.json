@@ -218,25 +218,47 @@
     ]
   },
   {
+    "objectID": "projects_creating_projects.html",
+    "href": "projects_creating_projects.html",
+    "title": "5  Projects - Creating Projects",
+    "section": "",
+    "text": "5.1 FIX - migrate from previous",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Projects - Creating Projects</span>"
+    ]
+  },
+  {
+    "objectID": "projects_creating_projects.html#need-to-figure-out-that-possible-bad-data-on-older-quarto-book",
+    "href": "projects_creating_projects.html#need-to-figure-out-that-possible-bad-data-on-older-quarto-book",
+    "title": "5  Projects - Creating Projects",
+    "section": "5.2 Need to figure out that possible bad data on older quarto book",
+    "text": "5.2 Need to figure out that possible bad data on older quarto book",
+    "crumbs": [
+      "Part 1",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Projects - Creating Projects</span>"
+    ]
+  },
+  {
     "objectID": "projects_hex.html",
     "href": "projects_hex.html",
-    "title": "5  Projects - Hex",
+    "title": "6  Projects - Hex",
     "section": "",
     "text": "Get Hexwall working\nGet Hexwall working with maps\nMake a RRL Hex with Shiny App\nMake a RRL Hex with hexSticker package\nGet a Shiny Hexwall working\nGet a Shiny Hexwall working with maps\nGet a Shiny Hexwall working with multiple map choices\nGet an updated Hexwall working with an input of a hex\n\n\n\n✅ Data loaded\n\n❌ Need to preprocess\n\n⭕ Pending\n\n☑️ Some progress\n❎ No progress\n🚫 Stalled\n🆕 New\n🔄 Ongoing\n🏁 Completed\n\n📅 Scheduled\n📌 Important\n🔒 Private\n🔓 Public\n🧪 Testing\n🛠️ Maintenance\n📝 Documentation\n💡 Ideas\n🎨 Design\n📊 Analysis\n📈 Visualization\n🤖 Automation\n🔍 Research\n🧩 Integration\n⚙️ Configuration\n🧹 Cleanup\n🧭 Exploration\n🗂️ Organization\n🧮 Calculation\n🧱 Foundation\n🧬 Experimentation\n🧰 Toolbox\n🛡️ Security\n🌐 Networking\n☁️ Cloud\n🖥️ Hardware\n📦 Packaging\n🧑‍💻 Development\n🧑‍🔬 Testing\n🧑‍🎨 Design\n🧑‍🏫 Documentation\n🧑‍🚀 Deployment\n🧑‍🔧 Maintenance\n🧑‍🤝‍🧑 Collaboration\n🧑‍💼 Management\n🧑‍🎤 Presentation",
     "crumbs": [
       "Part 2",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Projects - Hex</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Projects - Hex</span>"
     ]
   },
   {
     "objectID": "rrl_dot_com.html",
     "href": "rrl_dot_com.html",
-    "title": "6  RRL.com Stuff",
+    "title": "7  RRL.com Stuff",
     "section": "",
-    "text": "6.0.1 As of 20251010\nwww.wordpress.com account to use is: User: kwill1992rrl which links to kwill1992@hotmail.com There is another one (at least one other), which is User: kwill1992 and links to kevin.williams@rrldataanalytics.com The kwill1992 one does not have any websites linked to it. The kwill1992rrl account has both the old one @ www.rrldataanalytics.com and the one in development at the numbered IP address.\nTo get to the linked sites at www.wordpress.com, go to “managed blogs” button and this will come up: https://wordpress.com/sites\nOnly one is default site at any given time. You still need to login with user account to edit each website. Each website has a “user” and “kwill1992” user. Different passwords for each for each website.",
+    "text": "7.0.1 As of 20251010\nwww.wordpress.com account to use is: User: kwill1992rrl which links to kwill1992@hotmail.com There is another one (at least one other), which is User: kwill1992 and links to kevin.williams@rrldataanalytics.com The kwill1992 one does not have any websites linked to it. The kwill1992rrl account has both the old one @ www.rrldataanalytics.com and the one in development at the numbered IP address.\nTo get to the linked sites at www.wordpress.com, go to “managed blogs” button and this will come up: https://wordpress.com/sites\nOnly one is default site at any given time. You still need to login with user account to edit each website. Each website has a “user” and “kwill1992” user. Different passwords for each for each website.",
     "crumbs": [
       "Part 2",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>RRL.com Stuff</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>RRL.com Stuff</span>"
     ]
   },
   {
@@ -297,11 +319,11 @@
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "8  Summary",
+    "title": "9  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -322,28 +344,6 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
-    ]
-  },
-  {
-    "objectID": "projects_creating_projects.html",
-    "href": "projects_creating_projects.html",
-    "title": "5  Projects - Creating Projects",
-    "section": "",
-    "text": "5.1 FIX - migrate from previous",
-    "crumbs": [
-      "Part 1",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Projects - Creating Projects</span>"
-    ]
-  },
-  {
-    "objectID": "projects_creating_projects.html#need-to-figure-out-that-possible-bad-data-on-older-quarto-book",
-    "href": "projects_creating_projects.html#need-to-figure-out-that-possible-bad-data-on-older-quarto-book",
-    "title": "5  Projects - Creating Projects",
-    "section": "5.2 Need to figure out that possible bad data on older quarto book",
-    "text": "5.2 Need to figure out that possible bad data on older quarto book",
-    "crumbs": [
-      "Part 1",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Projects - Creating Projects</span>"
     ]
   }
 ]
