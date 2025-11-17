@@ -272,6 +272,16 @@
     ]
   },
   {
+    "objectID": "errors_and_warnings.html",
+    "href": "errors_and_warnings.html",
+    "title": "Errors and Warnings",
+    "section": "",
+    "text": "Github\n\nto fix a git push commit holding up\n\nrm .git/index.lock [in Terminal]\n\n\n\n\nRender to PDF if using html widgets\n\nif rendering to PDF from HTML widgets (e.g., leaflet, DT), use the webshot2 package\n\ninstall with install.packages(\"webshot2\")\nensure that webshot2::install_phantomjs() has been run once to install PhantomJS",
+    "crumbs": [
+      "Errors and Warnings"
+    ]
+  },
+  {
     "objectID": "references.html",
     "href": "references.html",
     "title": "References",

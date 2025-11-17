@@ -20,6 +20,7 @@ book:
         - projects_hex.qmd    
         - concepts.qmd
     - summary.qmd
+    - errors_and_warnings.qmd
     - references.qmd
 
 bibliography: references.bib
