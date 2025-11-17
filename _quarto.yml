@@ -18,6 +18,7 @@ book:
     - part: "Part 2"
       chapters:
         - projects_hex.qmd    
+        - concepts.qmd
     - summary.qmd
     - references.qmd
 
