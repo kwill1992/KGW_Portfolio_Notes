@@ -20,6 +20,7 @@ book:
       chapters:
         - projects_hex.qmd    
         - concepts.qmd
+        - rrl_dot_com.qmd
     - summary.qmd
     - errors_and_warnings.qmd
     - references.qmd
